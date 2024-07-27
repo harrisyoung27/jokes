@@ -2,8 +2,6 @@ body {
     text-align: center;
     overflow: hidden;
     font-family: verdana;
-    height: 100vh;
-    width: 200vh;
     background: linear-gradient(
         90deg,
         skyblue,
@@ -19,9 +17,9 @@ body {
   }
   
   div {
-    height: 50vh;
-    width: 40vw;
-    margin-top: 100px;
+    height: 75%;
+    width: 75%;
+    margin-top: 50px;
     text-align: center;
     border: 3px solid black;
   }
@@ -76,4 +74,11 @@ body {
 
   a {
     text-decoration: none;
+  }
+
+  @media (min-width: 700px) {
+    div {
+      height: 50%;
+      width: 50%;
+    }
   }
