@@ -1,0 +1,73 @@
+body {
+    overflow: hidden;
+    font-family: verdana;
+    background: linear-gradient(
+        90deg,
+        skyblue,
+        white,
+        pink
+    );
+  }
+  
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  div {
+    height: 200px;
+    width: 400px;
+    margin-top: 25vh;
+    text-align: center;
+    border: 3px solid rgb(224, 70, 96);
+  }
+  
+  button {
+    height: 50px;
+    width: 150px;
+    background: pink;
+    border: 2px solid black;
+    color: blue;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.1s;
+  }
+  
+  button:hover {
+    background: blue;
+    color: white;
+  }
+  
+  button:active {
+    background: white;
+    color: black;
+  }
+  
+  button.no-button {
+    color: blue;
+  }
+  
+  button.no-button:hover {
+    color: blue;
+  }
+  
+  button.no-button:active {
+    color: white;
+  }
+  
+  button.no-button:before {
+    content: "YES";
+    position: absolute;
+    color: yellow;
+    opacity: 0;
+  }
+  
+  button.no-button:hover:before {
+    opacity: 1;
+  }
+  
+  button.no-button:active:before {
+    opacity: 1;
+    color: black;
+  }
